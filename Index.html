@@ -1,0 +1,82 @@
+<!--Autor Katherine Viviana Sierra Briñez  -->
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+ <title></title>
+ <link href="css/estilos.css" rel="stylesheet" type="text/css">
+<title>Students safe house</title>
+    <style>
+      #map {
+        width: 100%;
+        height: 400px;
+        background-color: grey;
+      }
+    </style>
+</head>
+<style>
+
+
+    </style>
+<body>
+<!-- Titulo superior-->  
+    
+  <h1 class="titleDiv">Students safe house</h1>
+   <div class = "menubar">
+            <ul class="menu">
+                <li><a href="Index.html" class="menu-item current-link">Inicio</a></li>
+                <li><a href="Filter.html" class="menu-item">Filter</a></li>
+                <li><a href="Contact.html" class="menu-item">Contact</a></li>
+                <li><a href="Places.html" class="menu-item">Places</a></li>
+            </ul>
+       
+	</div>
+	<br>
+    <br>
+        <body>
+    <div align= center><p class= "parrafo">
+    <h3>Map Chicago</h3>
+    </p>
+    </div>
+    
+    <div id="map"></div>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD68Mvgvu0RXHYZ442N8sNoe97Mb3FS2fg&callback=initMap">
+    </script>
+    <script type="text/javascript">
+    function initMap(){
+        var mapDiv = document.getElementById('map'); //Line 1: Save reference to div element where map would be shown
+        var map = new google.maps.Map(mapDiv, {//Line 2: Create Map object passing element reference, center and zoom as parameters
+            center: {lat: 40.4237, lng: -86.9212}, //This is Purdue University's Location
+            zoom: 12});
+    }
+    </script>
+    <script type="text/javascript">
+    function initMap(){
+        var mapDiv = document.getElementById('map');
+        var map = new google.maps.Map(mapDiv, {
+          center: {lat: 40.4237, lng: -86.9212},
+          zoom: 12});
+        var marker = new google.maps.Marker({ //Line 1
+          position: {lat: 40.4237, lng: -86.9212}, //Line2: Location to be highlighted
+          map: map,//Line 3: Reference to map object
+          title: 'Purdue University' //Line 4: Title to be given
+        })
+    }
+  </script>
+ <body>
+
+	<div align= center><p class= "parrafo">
+    You are looking for a house, you want to live near to your friends and in exclusive places ? 
+    </p>
+    </div>
+     <div style="text-align:center;"><img src="Imagenes/Imagenes.jpg" width="830px" heigth="720px" alt="social red"/>
+  </div>
+  		<div class="footer">
+            <div align="center">
+            <footer id="pie"><p>Katherine Viviana Sierra</p></footer>
+        	<h3>Universidad Nacional de Colombia</h3>
+        	</div>
+        	
+</body>
+</html>

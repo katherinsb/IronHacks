@@ -1,0 +1,125 @@
+@charset "utf-8";
+/* CSS Document */
+/* Titulo principal */
+/*CSS  Katherine Viviana Sierra Briñez 
+
+
+/* Propierities*/
+@font-face {font-family: Disney; src: url('../fonts/waltograph42.ttf');}
+
+.titleDiv {
+    width: 100%;
+    text-align:center;
+    font-family: tahoma;
+    color: black;
+    font-size: 50px;
+}
+
+
+	.menu-bar{
+    width: 100%;
+}
+
+.menu {
+    overflow: hidden;
+    background-color: #718268;
+    font-family: tahoma;
+    font-weight: bolder;
+    font-size: 25px;
+    color: 	#718268;
+    list-style: none;
+    margin: 0 -10px 0 -10px;
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+
+.menu > li{
+    flex: 1 1 100%;
+    text-align: center;
+    padding: 3px;
+}
+
+.menu li{
+    background-color: #718268;
+}
+
+.menu li ul{
+    transition: opacity 0.5s;
+    opacity: 0;
+    height: 0;
+    position: absolute;
+    background-color: #718268;
+    overflow: hidden;
+    list-style: none;
+    display: block;
+    margin: 0;
+    padding: 5px;
+    min-width: 15%;
+    border-radius: 0px 5px 5px 5px;
+}
+
+
+.menu li:hover > ul{
+    opacity: 1;
+    height: auto;
+}
+
+.menu li ul li{
+    position: relative;
+    display: block;
+    top: 0px;
+    left: 0;
+    right: 0;
+}
+
+
+.current-link{
+    color: #000000!important;
+}
+
+.menu-item:link, .menu-item:visited,
+ .submenu-item:link, .submenu-item:visited{
+    text-decoration: none;
+    background-color: #718268;
+    color: #F0F8FF;
+    transition: color 0.5s;
+}
+
+
+.parrafo {
+    font-family: 'annie-use-your-telescope';
+    font-weight: bolder;
+	text-align:justify;
+    font-size:25PX;
+    width: 840px;
+    color:black;
+}
+.parrafo2 {
+    font-family: 'annie-use-your-telescope';
+    font-weight: bolder;
+	text-align:justify;
+    font-size:20PX;
+    width: 840px;
+    color:#010101;
+}
+#texto{
+   color:#FFE4E1;
+   background-color: rgba(211,211,211,0.3);
+   font-family: 'annie-use-your-telescope';
+    font-size: 65px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.footer{
+	width:100%;
+	background-color:#718268;
+	padding-top:25px;
+	padding-bottom:25px;
+	text-align:center;
+	font-family: astloch;
+	color:#fff;
+}
