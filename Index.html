@@ -1,45 +1,73 @@
-<!--Autor Katherine Viviana Sierra Briñez  -->
-<!doctype html>
-<html>
-<head>
-<meta charset="UTF-8">
- <title></title>
- <link href="css/estilos.css" rel="stylesheet" type="text/css">
-<title>Students safe house</title>
-    <style>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Main Page</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="IronHacks/css/reset.css" type="text/css" media="all">
+		<link rel="stylesheet" href="IronHacks/css/layout.css" type="text/css" media="all">
+		<link rel="stylesheet" href="IronHacks/css/style.css" type="text/css" media="all">
+		<script type="text/javascript" src="IronHacks/js/jquery-1.6.js" ></script>
+		<script type="text/javascript" src="IronHacks/js/cufon-yui.js"></script>
+		<script type="text/javascript" src="IronHacks/js/cufon-replace.js"></script>
+  		<script type="text/javascript" src="IronHacks/js/Didact_Gothic_400.font.js"></script>
+		<script type="text/javascript" src="IronHacks/js/jquery.nivo.slider.pack.js"></script>
+		<script type="text/javascript" src="IronHacks/js/atooltip.jquery.js"></script>
+		<script type="text/javascript" src="IronHacks/js/jquery.jqtransform.js" ></script>
+		<script type="text/javascript" src="IronHacks/js/script.js"></script>
+		<script type="text/javascript" src="IronHacks/js/jquery.easing.1.3.js"></script>
+		<!--[if lt IE 9]>
+			<script type="text/javascript" src="js/html5.js"></script>
+			<style type="text/css">
+				.bg{ behavior: url(js/PIE.htc); }
+			</style>
+		<![endif]-->
+		<!--[if lt IE 7]>
+			<div style=' clear: both; text-align:center; position: relative;'>
+				<a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/images/upgrade.jpg" border="0"  alt="" /></a>
+			</div>
+		<![endif]-->
+	</head>
+
+	<body id="page1">
+		<div class="body1">
+			<div class="main">
+<!-- header -->
+				<header>
+				  <h1 class="titleDiv">Students safe house</h1>
+					<div class="wrapper">
+		 					 <ul id="icons">
+							<li><a href="#" class="normaltip" title="Facebook"><img src="IronHacks/images/icon1.jpg" alt=""></a></li>
+							<li><a href="#" class="normaltip" title="Twitter"><img src="IronHacks/images/icon2.jpg" alt=""></a></li>
+							<li><a href="#" class="normaltip" title="Linkedin"><img src="IronHacks/images/icon3.jpg" alt=""></a></li>
+		</ul>
+				  </div>
+					<nav>
+					  <ul id="menu">
+							<li id="menu_active"><a href="IronHacks/index.html">Main Page</a></li>
+							<li><a href="IronHacks/Rent.html">Rent house</a></li>
+							<li><a href="IronHacks/Info.html">Info</a></li>
+							<li><a href="IronHacks/Place.html">Place</a></li>
+							<li><a href="IronHacks/Finance.html">Finance</a></li>
+							<li class="end"><a href="IronHacks/Contacts.html">Contact Us</a></li>
+						</ul>
+					</nav>
+			  </header>
+<!-- / header -->
+
+<!-- content -->
+		<div class="body2">
+			<div class="main">
+			<style>
       #map {
         width: 100%;
         height: 400px;
         background-color: grey;
       }
     </style>
-</head>
-<style>
-
-
-    </style>
-<body>
-<!-- Titulo superior-->  
-    
-  <h1 class="titleDiv">Students safe house</h1>
-   <div class = "menubar">
-            <ul class="menu">
-                <li><a href="Index.html" class="menu-item current-link">Inicio</a></li>
-                <li><a href="Filter.html" class="menu-item">Filter</a></li>
-                <li><a href="Contact.html" class="menu-item">Contact</a></li>
-                <li><a href="Places.html" class="menu-item">Places</a></li>
-            </ul>
-       
-	</div>
-	<br>
-    <br>
-        <body>
-    <div align= center><p class= "parrafo">
-    <h3>Map Chicago</h3>
-    </p>
-    </div>
-    
-    <div id="map"></div>
+				<section id="content">
+					<div class="wrapper">
+						<article class="col1">
+							 <div id="map"></div>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD68Mvgvu0RXHYZ442N8sNoe97Mb3FS2fg&callback=initMap">
     </script>
@@ -64,19 +92,62 @@
         })
     }
   </script>
- <body>
-
-	<div align= center><p class= "parrafo">
-    You are looking for a house, you want to live near to your friends and in exclusive places ? 
-    </p>
-    </div>
-     <div style="text-align:center;"><img src="Imagenes/Imagenes.jpg" width="830px" heigth="720px" alt="social red"/>
-  </div>
-  		<div class="footer">
-            <div align="center">
-            <footer id="pie"><p>Katherine Viviana Sierra</p></footer>
-        	<h3>Universidad Nacional de Colombia</h3>
-        	</div>
-        	
-</body>
+							</div>
+						</article>
+				  <article class="col2">
+							<form id="form_1" method="post">
+							  <div class="pad1">
+									<h3>Find Your Property</h3>
+									<div class="row">
+										City &amp; State, or Zip:<br>
+										<input type="text" class="input">
+									</div>
+									<div class="row_select">
+										Search Area:<br>
+										<select><option>&nbsp;</option><option>...</option><option>...</option></select>
+									</div>
+									<div class="row_select">
+										<div class="cols">
+											Price Range:<br>
+											<select><option>&nbsp;</option><option>...</option><option>...</option></select>
+										</div>
+										<div class="cols pad_left1">
+											to:<br>
+											<select><option>&nbsp;</option><option>...</option><option>...</option></select>
+										</div>
+									</div>
+									<div class="row_select">
+										<div class="cols">
+											Bedroom(s):<br>
+											<select><option>&nbsp;</option><option>...</option><option>...</option></select>
+										</div>
+										<div class="cols pad_left1">
+											Bathroom(s):<br>
+											<select><option>&nbsp;</option><option>...</option><option>...</option></select>
+										</div>
+									</div>
+									<div class="row_select pad_bot1">
+										<div class="cols">
+											Radius:<br>
+											<select><option>&nbsp;</option><option>...</option><option>...</option></select>
+										</div>
+										<div class="cols pad_left1">
+											<a href="#" class="button" onClick="document.getElementById('form_1').submit()">Proposals</a>
+										</div>
+									</div>
+									Know exactly what you want? <br>
+									Try our <a href="#">Advanced Search</a>
+							  </div>
+							</form>
+						</article>
+					</div>
+					<div class="wrapper">
+								</div>
+			</div>						
+						
+					</div>
+				</section>
+			</div>
+		</script>
+	</body>
 </html>
